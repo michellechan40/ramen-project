@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ramen 🍜</title>
+    <style>
+      body { 
+        background: #ffedff; 
+      }
+
+      h1 {
+        text-align: center;
+        border: 8px solid #f4aeba;
+        padding: 26px;
+        font-size: 28px;
+        border-radius: 8px;
+         color: #c54c82  
+        
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 24px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 18px;
+        margin: 20px 0 10px;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #ec729c;
+        color: white;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 15px 60px;
+      }
+
+      .learn-more {
+        display: block;
+        color: #c54c82;
+        text-decoration: none;
+        font-size: 16px;
+        margin-top: 10px;
+      }
+
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1><em>FOR THE LOVE OF RAMEN 🍜</em></h1>
+      <h2><em><strong>Japanese Noodle Soup</em></strong></h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/029/958/original/ramen.jpg?1648134886 width 100"
+        alt="Bowl of Ramen"
+      />
+      <p>
+        The history of ramen can be traced back to China, whose food culture was
+        introduced to Japan around the 1860s. This was around the time Japan
+        opened its ports after its national isolation. As Chinese immigrants
+        settled in the port of Yokohoma, they established their noodle making &
+        cooking style which eventually evolved and assimilated into the unique
+        Japanese style famously known as "ramen." 
+        <br/>
+        </p>
+        <p>
+        It was Momofuku Ando's (1910 -
+        2007) invention in 1958 that created instant noodles and put them on the
+        global map. Instant noodles consists of pre-cooked, dried noodles with
+        separate seasoning to complement the flavour and type of noodles. 
+        <br/>
+        </p>
+        <p>
+        Today, ramen is globally known for its experimental combination of soup
+        flavour, noodle type & texture and various toppings which can be made at
+        home with the help of an instant noodle pack or it can follow a gourmet
+        recipe using handmade noodles.
+        <hr>
+      <ul>
+      <li>
+        <a class=" Miso Ramen" href="https://en.wikipedia.org/wiki/Miso" target="_blank">Miso Ramen</a>
+      </a>
+      </li>
+      <li>
+        <a class="Shoyu Ramen" href="https://en.wikipedia.org/wiki/Soy_sauce" target="_blank">Shoyu Ramen</a>
+      </li>
+      <li>
+        <a class="Tonkotsu Ramen" href="https://en.wikipedia.org/wiki/Tonkotsu_ramen" target="_blank">Tonkotsu Ramen</a>
+        </li>
+      </ul>
+      </body>
+      <hr>
+      <p>
+      <a
+        href="https://en.wikipedia.org/wiki/Ramen"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more on Wikipedia 😋
+      </a>
+      <button class="buy-button">
+        Find A Ramen Spot 🥢
+      </button>
+      <p class="footer">
+        This page was built by Michelle Chan
+      </p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let country = prompt("What country do you live in?");
+        let email = prompt("What is your email?");
+
+        country = country.toLowerCase();
+        country = country.trim();
+
+        if (country === "canada"){
+        alert("Thank you, " + name + "! We'll get back to you on ramen listings in your country 🥡");
+        } else {
+        alert ("Sorry, " + name + " we're working on generating ramen listings in your country. We'll get back to you on alternative recommendations 🍽");
+        }
+      }
+
+      let buyButton = document.querySelector("button");
+      buyButton.addEventListener("click", buy);
+    </script>
+    </body>
+    </html> 
+    
+    
